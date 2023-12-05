@@ -8,18 +8,122 @@
     <link rel="stylesheet" href="escola.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="../imagens/logo.png" alt="logo">
+    <div id="corpo">
+        <header>
+            <div class="logo">
+                <img src="../imagens/logo.png" alt="logo">
+            </div>
+            <div class="nav">
+                <p><span><img src="../imagens/Escola.png" alt="escola icone"></span>Escolas</p>
+                <a href="../Alunos/aluno.html">
+                    <p><span><img src="../imagens/Alunos.png" alt="icone alunos"></span>Alunos</p>
+                </a>
+                    <a href="../Relatórios/relatorio.html">
+                        <p><span><img src="../imagens/Relatório.png" alt="relatorio icone"></span>Gerar Relatórios</p>
+                    </a>
+            </nav></span>
+            </div>
+            <div id="ellpinho">
+            </div>
+        </header>
+        <main>
+            <div id="cabeca">
+                <h2>Escolas</h2>
+                <span><img src="../imagens/Adicionar.png" alt="adicionar" onclick="mostrarModal()"></span>
+            </div>
+            <table id="tabelaEscolas">
+                <thead>
+                <tr>
+                    <th>ESCOLAS CADASTRADAS</th>
+                    <th>ENDEREÇO</th>
+                    <th>CONTATO</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Escola Municipal de Ensino Fundamental Professora Maria de Lourdes Teixeira</td>
+                    <td>Rua 1, 123</td>
+                    <td>(11) 1234-5678</td>
+                    <td><img src="../imagens/Editor2.png" alt="icone Editor2"></td>
+                </tr>
+                <tr>
+                    <td>Escola Municipal de Ensino Fundamental Professora Maria de Lourdes Teixeira</td>
+                    <td>Rua 1, 123</td>
+                    <td>(11) 1234-5678</td>
+                    <td><img src="../imagens/Editor2.png" alt="icone Editor2"></td> 
+                </tr>
+                <tr>
+                    <td>Escola Municipal de Ensino Fundamental Professora Maria de Lourdes Teixeira</td>
+                    <td>Rua 1, 123</td>
+                    <td>(11) 1234-5678</td>
+                    <td><img src="../imagens/Editor2.png" alt="icone Editor2"></td>
+                </tr>
+                <tr>
+                    <td>Escola Municipal de Ensino Fundamental Professora Maria de Lourdes Teixeira</td>
+                    <td>Rua 1, 123</td>
+                    <td>(11) 1234-5678</td>
+                    <td><img src="../imagens/Editor2.png" alt="icone Editor2"></td>
+                </tr>
+                <tr>
+                    <td>Escola Municipal de Ensino Fundamental Professora Maria de Lourdes Teixeira</td>
+                    <td>Rua 1, 123</td>
+                    <td>(11) 1234-5678</td>
+                    <td><img src="../imagens/Editor2.png" alt="icone Editor2"></td>
+                </tr>
+                <tr>
+                    <td>Escola Municipal de Ensino Fundamental Professora Maria de Lourdes Teixeira</td>
+                    <td>Rua 1, 123</td>
+                    <td>(11) 1234-5678</td>
+                    <td><img src="../imagens/Editor2.png" alt="icone Editor2"></td>
+                </tr>
+                <tr>
+                    <td>Escola Municipal de Ensino Fundamental Professora Maria de Lourdes Teixeira</td>
+                    <td>Rua 1, 123</td>
+                    <td>(11) 1234-5678</td>
+                    <td><img src="../imagens/Editor2.png" alt="icone Editor2"></td>
+                </tr>
+                <tr>
+                    <td>Escola Municipal de Ensino Fundamental Professora Maria de Lourdes Teixeira</td>
+                    <td>Rua 1, 123</td>
+                    <td>(11) 1234-5678</td>
+                    <td><img src="../imagens/Editor2.png" alt="icone Editor2"></td>
+                </tr>
+                <tr>
+                    <td>Escola Municipal de Ensino Fundamental Professora Maria de Lourdes Teixeira</td> 
+                    <td>Rua 1, 123</td>
+                    <td>(11) 1234-5678</td>
+                    <td><img src="../imagens/Editor2.png" alt="icone Editor2"></td>
+                </tr>
+                <tr>
+                    <td>Escola Municipal de Ensino Fundamental Professora Maria de Lourdes Teixeira</td>
+                    <td>Rua 1, 123</td>
+                    <td>(11) 1234-5678</td>
+                    <td><img src="../imagens/Editor2.png" alt="icone Editor2"></td>
+                </tr>
+                <tr>
+                    <td>Escola Municipal de Ensino Fundamental Professora Maria de Lourdes Teixeira</td>
+                    <td>Rua 1, 123</td>
+                    <td>(11) 1234-5678</td>
+                    <td><img src="../imagens/Editor2.png" alt="icone Editor2"></td>
+                </tr>
+                </tbody>
+            </table>
+        </main>
+        <div id="modal">
+            <label for="nomeEscola">Nome da Escola:</label>
+            <input type="text" id="nomeEscola">
+    
+            <label for="enderecoEscola">Endereço:</label>
+            <input type="text" id="enderecoEscola">
+    
+            <label for="contatoEscola">Contato:</label>
+            <input type="text" id="contatoEscola">
+    
+            <button onclick="adicionarEscola()">Adicionar Escola</button>
+            <button onclick="fecharModal()">Fechar</button>
         </div>
-        <div class="nav">
-            <span><a href="../Alunos/aluno.html">Alunos</a></span>
-            <span><a href="../Escolas/escola.html">Escolas</a></span>
-            <span><a href="../Matérias/materia.html">Matérias</a></span>
-            <span><a href="../Turmas/turma.html">Turmas</a></span>
-            <span><a href="../Notas/nota.html">Notas</a></span>
-            <span><a href="../Relatórios/relatorio.html">Relatórios</a></span>
-        </div>
-    </header>
+    
+    </div>
 </body>
+<script src="../Script/script.js"></script>
 </html>
