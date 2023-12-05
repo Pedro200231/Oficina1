@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #009de0;
+    display: flex;
+}
+main{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+img.main{
+    text-align: center;
+    width: 95%;
+    height: 100%;
+}
+img.main#aluno{
+    padding-right: 7px;
+}
+p.main{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+p.main > a{
+    color: white;
+    text-decoration: none;
+}
