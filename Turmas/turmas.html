@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aluno</title>
-    <link rel="stylesheet" href="aluno.css">
+    <title>Turmas</title>
+    <link rel="stylesheet" href="turmas.css">
     <link rel="stylesheet" href="../HeaderCSS/header.css">
 </head>
 <body>
@@ -17,28 +17,27 @@
                 <a href="../Escolas/escola.html">
                     <p><span><img src="../imagens/Escola.png" alt="escola icone"></span>Escolas</p>
                 </a>
+                <a href="../Alunos/aluno.html">
                     <p><span><img src="../imagens/Alunos.png" alt="icone alunos"></span>Alunos</p>
-                    <a href="../Relatórios/relatorio.html">
-                        <p><span><img src="../imagens/Relatório.png" alt="relatorio icone"></span>Gerar Relatórios</p>
-                    </a>
-            </nav></span>
+                </a>
+                <a href="../Relatórios/relatorio.html">
+                    <p><span><img src="../imagens/Relatório.png" alt="relatorio icone"></span>Gerar Relatórios</p>
+                </a>
             </div>
             <div id="ellpinho">
             </div>
         </header>
         <main>
             <div id="cabeca">
-                <h2>Alunos Cadastrados</h2>
+                <h2>Nome da Escola</h2>
+                <span><img src="../imagens/Adicionar.png" alt="adicionar" onclick="mostrarModal()"></span>
             </div>
-            
+        
             <div id="tabelasContainer">
-                <table id="tabelaAlunos">
+                <table id="tabelaTurmas">
                     <thead>
                         <tr>
-                            <th>ALUNOS</th>
-                            <th>ESCOLA</th>
-                            <th>TURMA</th>
-                            <th>ID</th>
+                            <th>TURMAS</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -46,8 +45,18 @@
                     </tbody>
                 </table>
             </div>
+
+            <div id="overlay"></div>
+
+            <div id="modal">
+                <label for="nomeTurma">Nome da Turma:</label>
+                <input type="text" id="nomeTurma">
+        
+                <button onclick="adicionarEscola()">Adicionar Turma</button>
+                <button onclick="fecharModal()">Fechar</button>
+            </div>    
         </main>
     </div>
-    <script src="../Script/scriptAlunos.js"></script>
 </body>
+<script src="../Script/scriptTurmas.js"></script>
 </html>
